@@ -314,7 +314,7 @@ endef
 # function interprets it as make commands.
 $(foreach smver,$(SM_VERSIONS),$(eval $(call SMVERSION_template,$(smver))))
 
-$(TARGET): makedirectories $(OBJS) $(CUBINS) Makefile Tags
+$(TARGET): makedirectories $(OBJS) $(CUBINS) Makefile
 	$(VERBOSE)$(LINKLINE)
 	
 cubindirectory:
